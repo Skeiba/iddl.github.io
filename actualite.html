@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="with=device-width, initial-scale = 1.0">
+    <title>IDDL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="pics/logoB.png" alt="Acceuil"></a>
+            <div class="liens" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="actualite.html">ACTUALITE</a></li>
+                    <li><a href="cours.html">COURS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>ACTUALITE</h1>
+    </section>
+
+    <!-------------les actualite---------------->
+    <section class="program">
+        <p>Rapport Tp05 Java -19/11/2023-<br></p>
+        <p>Rapport Tp04 Java -06/11/2023-<br></p>
+    </section>
+
+
+
+
+
+
+
+    
+    <!----------------footer------------------>
+    <section class="footer">
+        <h4>Information du site</h4>
+        <p>Crée par Bahlaouane Salaheddine <br> À partir d'un tutoriel sur YouTube.</p>
+    </section>
+    <!---Java script menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

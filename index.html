@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="with=device-width, initial-scale = 1.0">
+    <title>IDDL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="pics/logoB.png" alt="Acceuil"></a>
+            <div class="liens" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="actualite.html">ACTUALITE</a></li>
+                    <li><a href="cours.html">COURS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>LST : Ingénierie de Données et Développement Logiciel</h1>
+            <p>Bienvenue sur ce site dédié aux etudiant de la filière "LST : Ingénierie de Données et Développement Logiciel".<br>Explorez les cours et restez informé avec les dernières actualités concernant notre filière.</p>
+        </div>
+    </section>
+
+    <!----------------------program--------------------->
+    
+    <section class="program">
+        <h1>À PROPOS IDDL</h1>
+        <p>La liscence "Ingénierie des Données et Développement Logiciel" est une formation complète qui se compose de 9 modules spécialisés ainsi que d'un projet de fin d'études. Cette filière offre une solide base de connaissances dans les domaines clés de l'ingénierie des données et du développement logiciel. Le projet de fin d'études permet aux étudiants d'appliquer leurs connaissances dans un contexte réel, ce qui renforce leur compréhension et leur expérience pratique. À la fin de cette formation, les diplômés seront prêts à relever les défis du monde en constante évolution de la technologie, en contribuant au développement de logiciels de pointe et à une utilisation efficace des données dans divers domaines professionnels.</p>
+        <div class="row">
+            <div class="program-col">
+                <h3>Semestre 5</h3>
+                <ul>
+                    <li>Mathématiques pour ingénierie des données.</li>
+                    <li>Python pour les sciences de données.</li>
+                    <li>Technologie du Web et Framework.</li>
+                    <li>Programmation Orientée Objet en Java.</li>
+                    <li>Modélistaion et conception avec UML.</li>
+                    <li>Réseaux et Système.</li>
+                </ul>
+            </div>
+            <div class="program-col">
+                <h3>Semestre 6</h3>
+                <ul>
+                    <li>Inteligence Artificielle.</li>
+                    <li>Base de données avancées.</li>
+                    <li>Gestion de projet et soft skills.</li>
+                    <li>Projet de fin d'études.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!----------------contact------------------>
+    <section class="cta">
+        <h1>Pour nous contacter ,cliquez sur le bouton ci-dessous.</h1>
+        <a href="" class="hero-btn">NOUS CONTACTER</a>
+    </section>
+    
+    <!----------------footer------------------>
+    <section class="footer">
+        <h4>Information du site</h4>
+        <p>Crée par Bahlaouane Salaheddine <br> À partir d'un tutoriel sur YouTube.</p>
+    </section>
+    <!---Java script menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
