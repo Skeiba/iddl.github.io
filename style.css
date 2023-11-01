@@ -200,6 +200,7 @@ h3{
 }
 
 /*-----------for phones---------------*/
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
